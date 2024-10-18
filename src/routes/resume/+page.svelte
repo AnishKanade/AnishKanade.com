@@ -1,5 +1,7 @@
 <script>
-	import { data, title } from '@data/resume';
+	// Update the path to where the resume PDF is stored in your project
+	export const data = 'src/routes/resume/Public/Resume.pdf'; // Adjust if necessary
+	export const title = 'Resumé';
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
 	import CommonPage from '$lib/components/CommonPage.svelte';
@@ -8,8 +10,8 @@
 <CommonPage {title}>
 	<div class="resume">
 		{#if data}
-			<a href={data} download>
-				<Chip size={'1.25em'}>Download</Chip>
+			<a href={data} target="_blank">
+				<Chip size={'1.25em'}>View Resumé</Chip>
 			</a>
 		{:else}
 			<Chip>Ooops! no CV at the moment.</Chip>

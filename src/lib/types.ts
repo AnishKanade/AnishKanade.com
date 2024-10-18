@@ -8,6 +8,7 @@ export enum Platform {
 	Email = 'email',
 	Facebook = 'facebook',
 	Youtube = 'youtube'
+	
 }
 
 export type Icon = `i-${string}-${string}`;
@@ -18,7 +19,8 @@ export enum ContractType {
 	SelfEmployed = 'Self-employed',
 	Freelance = 'Freelance',
 	Contract = 'Contract',
-	Internship = 'Internship'
+	Internship = 'Internship',
+	Research = 'Research'
 }
 
 export type Asset = string | { light: string; dark: string };
@@ -69,13 +71,11 @@ export interface Experience<S extends string = string> extends Project<S> {
 	contract: ContractType;
 }
 
+
 export interface Education<S extends string = string> extends Item<S> {
 	organization: string;
 	location: string;
-	period: {
-		from: Date;
-		to?: Date;
-	};
+	period: {from: Date; to?: Date;} | string;
 	subjects: Array<string>;
 	degree: string;
 }
