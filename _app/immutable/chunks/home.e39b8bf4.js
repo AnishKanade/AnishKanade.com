@@ -1,4 +1,4 @@
-import{P as t}from"./types.7ffc7bf1.js";import{g as s}from"./skills.e7e93ba9.js";const n="Home",o="Anish",i="Kanade",l=`
+import{P as t}from"./types.7ffc7bf1.js";import{g as s}from"./skills.f4c5d081.js";const n="Home",o="Anish",i="Kanade",l=`
 
 Hi there! I am currently a Computer Science undergraduate studying at the University of Massachusetts Boston, Class of 2025.
 I am passionate about software development, problem-solving, and exploring innovative tech solutions.
