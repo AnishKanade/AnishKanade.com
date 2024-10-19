@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
-const base = '/slick-portfolio-svelte';
+const base = '/AnishKanadeWebsite';  // Change this to your repo name
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -21,10 +21,13 @@ const config = {
 			'@components': './src/lib/components',
 			'@md': './src/lib/md',
 			'@stores': './src/lib/stores',
-			'@utils': './src/lib/utils'
+			'@utils': './src/lib/utils',
+			pages: 'build',   // Ensure the output is to the 'build' folder
+			assets: 'build',
+			fallback: '404.html'
 		},
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? base : ''
+			base: process.env.NODE_ENV === 'production' ? base : ''  // Correct base path for production
 		}
 	}
 };

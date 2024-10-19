@@ -1,6 +1,6 @@
 <script>
 	// Update the path to where the resume PDF is stored in your project
-	export const data = 'src/routes/resume/Public/Resume.pdf'; // Adjust if necessary
+	export const data = 'Resume.pdf'; // Adjust if necessary
 	export const title = 'Resumé';
 
 	import Chip from '$lib/components/Chip/Chip.svelte';
