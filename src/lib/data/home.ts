@@ -9,7 +9,7 @@ export const lastName = 'Kanade';
 
 export const description = `
 
-Hey there! I am currently a Computer Science undergraduate studying at the University of Massachusetts Boston, Class of 2025.
+Hi there! I am currently a Computer Science undergraduate studying at the University of Massachusetts Boston, Class of 2025.
 I am passionate about software development, problem-solving, and exploring innovative tech solutions.
 I am always eager to learn new technologies and contribute to impactful projects. Check out more about me!`;
 
